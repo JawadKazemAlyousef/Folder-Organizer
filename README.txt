@@ -86,7 +86,7 @@ Instruction:
        Folder_name:
        {Extension_name}
        Folder_name:
-    			{}
+	{}
 Folder_name must be a valid name, and it can be multiple words.
 Extension_name must be a valid name without a dot (.), and it can be multiple words
 5. Make sure to save the settings at this specific mode (at the same window or the main window) by clicking File Menu, and then Save Option or Save As option if you want to save in the new saved setting.
