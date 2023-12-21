@@ -1,0 +1,6 @@
+Theme: Light
+Theme mode: 0
+Type: Standard
+Type mode: 0
+Language: English
+Language mode: 0
