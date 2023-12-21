@@ -54,7 +54,7 @@
 The purpose of the program is to organize the files of the chosen folder based on three modes:
 
 1. Standard mode: Organize the files of the chosen folder based on their extension formats.
-التعليمات:
+Instruction:
 1. انقر زر العادي.
 2. انقر زر اختر لتختار المسار (موقع المجلد).
 3. اختر المسار (موقع المجلد) الذي تريد أن ترتبه.
@@ -63,7 +63,7 @@ The purpose of the program is to organize the files of the chosen folder based o
 
 
 2. Recommended mode: Organize the files of the chosen folder based on my recommended choice.
-التعليمات:
+Instruction:
 1. انقر زر الموصى.
 2. انقر زر اختر لتختار المسار (موقع المجلد).
 3. اختر المسار (موقع المجلد) الذي تريد أن ترتب ملفاته.
@@ -74,7 +74,7 @@ The purpose of the program is to organize the files of the chosen folder based o
  ملاحظة: إذا كان هناك صيغ ملفات غير موجودة في قائمة الموصى بها، سترتب تلقائيا حسب صيغهم.
 
 3. Customized mode: Organize the files of the chosen folder based on your customized choice
-التعليمات:
+Instruction:
 1. انقر زر المخصص.
 2. انقر زر اختر لتختار المسار (موقع المجلد).
 3. اختر المسار (موقع المجلد) الذي تريد أن ترتب ملفاته.
