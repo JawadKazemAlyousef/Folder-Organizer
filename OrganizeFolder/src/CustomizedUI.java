@@ -49,7 +49,7 @@ public class CustomizedUI {
 	private Button help = backOrHelpButtonProperty(1);
 
 	Button chooseFolder = buttonProperty("Choose");
-	Button custom = buttonProperty("Custom");
+	Button custom = buttonProperty("Customize");
 	Button upload = buttonProperty("Upload");
 	Button organize = buttonProperty("Organize");
 
