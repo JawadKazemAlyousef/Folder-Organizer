@@ -95,11 +95,10 @@ Instruction:
 7. انقر زر نظم لتنظم ملفات المجلد المختار حسب ما تخصصه.
    ملاحظة: إذا كان هناك صيغ ملفات غير موجودة في قائمتك المخصصة، سترتب تلقائيا حسب صيغهم
    
-مبرمج البرنامج جواد اليوسف
-البرنامج مفتوح المصدر، يمكنك استخدامه وتعديل الكود إن أردت تحسينه
-لا تنس أن تنسب الفضل لي في العمل الأصلي
-الإصدار: Ver 1 
-للتواصل معي: Jawadkazemalyousef@gmail.com 
-شكرا لكم
-
+The program is programmed by Jawad Alyousef
+The program is open-source, you can use it and modify it if you want to improve it
+Don't forget to give me credit for the original work 
+Version: 1 
+Contact me: Jawadkazemalyousef@gmail.com
+Thank you
 
