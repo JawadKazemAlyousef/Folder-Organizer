@@ -418,11 +418,11 @@ public class CustomizedUI {
 			Text cMode = new Text("Customized mode: ");
 			Text bChoose = new Text("Choose button ");
 			Text bOrganize = new Text("Organize button ");
-			Text bCustom = new Text("Custom button");
+			Text bCustom = new Text("Customize button");
 			Text bOK = new Text("OK button ");
-			Text mFile = new Text("File Menu");
-			Text mSave = new Text("Save Option ");
-			Text mSaveAs = new Text("Save As Option ");
+			Text mFile = new Text("File menu");
+			Text mSave = new Text("Save option ");
+			Text mSaveAs = new Text("Save As option ");
 			Text bUpload = new Text("Upload button ");
 			Text note = new Text("Note: ");
 
@@ -441,21 +441,21 @@ public class CustomizedUI {
 					+ "Instruction: \n\n" + "1. Click ");
 			Text partTwo = new Text("to select the path (the folder location)\n\n"
 					+ "2. Choose the path (the folder location) that you want to organize\n\n"
-					+ "3. You can either manually custom your organization or upload your customized saved file\n\n"
-					+ "A. By click ");
-			Text partThree = new Text(",  you can manually custom your organization\n" + "make sure to press ");
-			Text partFour = new Text("to update the new changes\n\n" + "B. By click ");
+					+ "3. You can either manually customize your organization or upload your customized saved file\n\n"
+					+ "A. By clicking ");
+			Text partThree = new Text(",  you can manually customize your organization\n" + "Make sure to click ");
+			Text partFour = new Text("to update the new changes\n\n" + "B. By clicking ");
 			Text partFive = new Text(",  you can upload a customized saved file\n"
-					+ "make sure to choose saved file in .ifoi extension format and the contents be something like: \n\r"
+					+ "Make sure to choose the saved file in .ifoi extension format and the contents be something like: \n\r"
 					+ "Folder_name:\n" + "{Extension_name, Extension_name}\n" + "Folder_name:\n" + "{Extension_name}\n"
 					+ "Folder_name:\n" + "{}\n"
-					+ "Folder_name must be valid name, and it can be multiple words\n"
-					+ "Extension_name must be valid name without dot (.), and it can be multiple words\n\n"
+					+ "Folder_name must be a valid name, and it can be multiple words\n"
+					+ "Extension_name must be a valid name without a dot (.), and it can be multiple words\n\n"
 					+ "4. Make sure to save the settings at this specific mode (at the same window) by clicking ");
 			Text partSix = new Text(", and then ");
 			Text partSeven = new Text("or ");
-			Text partEight = new Text("if you want to save in new saved setting\n\n" + "5. Click ");
-			Text partNine = new Text("to organize the folder's files based on your cunstomized choice\n\n");
+			Text partEight = new Text("if you want to save in the new saved setting\n\n" + "5. Click ");
+			Text partNine = new Text("to organize the folder's files based on your customized choice\n\n");
 			Text partTen = new Text(
 					"If there are files' extension formats that are not in your customized list, they will be automatically organized based on their extension formats");
 
@@ -560,9 +560,9 @@ public class CustomizedUI {
 			Text partTwo = new Text(
 					"لتختار المسار (موقع المجلد)\n\n" + "2. اختر المسار (موقع المجلد) الذي تريد أن ترتب ملفاته\n\n"
 							+ "3. أنت تستطيع تخصيص تنظيمك يدويا، أو رفع تخزينتك المخصصة\n\n" + "أ. بالنقر على ");
-			Text partThree = new Text(",  أنت تستطيع تخصيص تنظيمك يدويا \n" + "تأكد من نقر ");
+			Text partThree = new Text("،  أنت تستطيع تخصيص تنظيمك يدويا \n" + "تأكد من نقر ");
 			Text partFour = new Text("لتحديث تغيراتك الجديدة\n\n" + "ب. بالنقر على ");
-			Text partFive = new Text(",  أنت تستطيع رفع تخزينتك المخصصة\n"
+			Text partFive = new Text("،  أنت تستطيع رفع تخزينتك المخصصة\n"
 					+ "تأكد من اختيار تخزينتك بصيغة .ifoi ويكون المحتوى كهذا:  \n\r" + "اسم_المجلد:\n"
 					+ "{اسم_الصيغة, اسم_الصيغة}\n" + "اسم_المجلد:\n" + "{اسم_الصيغة}\n" + "اسم_المجلد:\n"
 					+ "{}\n" 
