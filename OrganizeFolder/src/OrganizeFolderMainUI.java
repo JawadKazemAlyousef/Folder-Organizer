@@ -1097,7 +1097,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 	      }
 
    }
-   public void helpSetting() {
+    public void helpSetting() {
 	   	Alert helpAlert = new Alert(AlertType.CONFIRMATION);
     	TextFlow flow = new TextFlow();
 	    if(getLanguageMode() == 0) {
@@ -1111,7 +1111,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 		    rMode.setStyle("-fx-font-weight: bold;");
 		    cMode.setStyle("-fx-font-weight: bold;");
 		    
-		    Text partOne = new Text("The purpose of the program is to organize the files of the chosen folder based on three type modes:\n\n");
+		    Text partOne = new Text("The purpose of the program is to organize the files of the chosen folder based on three modes:\n\n");
 		    Text partTwo = new Text("Organize the files of the chosen folder based on their extension formats\n\n");
 		    Text partThree = new Text("Organize the files of the chosen folder based on my recommended choice\n\n");
 		    Text partFour = new Text("Organize the files of the chosen folder based on your customized choice");
@@ -1242,8 +1242,8 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 	   		aboutAlert.setTitle("About");
 		    aboutAlert.setHeaderText("About Folder Organizer program");
 		    content = new Text("The program is programmed by Jawad Alyousef\n\n"+
-		    					"The program is open-sorce, you can use it and modify it if you want to improve it\n\n"+
-		    					"Don't forget to give me credit in the original work \n\n"+
+		    					"The program is open-source, you can use it and modify it if you want to improve it\n\n"+
+		    					"Don't forget to give me credit for the original work \n\n"+
 		    					"Version: "+getVersion()+
 		    					"\n\nContact me: Jawadkazemalyousef@gmail.com\n\n"+
 					  			"Thank you");
@@ -1334,9 +1334,6 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 	   	}
 	    
    }
-   public void BackSetting(OrganizeFolderMainUI mainObj) {
-		
-	}
    
   
  
