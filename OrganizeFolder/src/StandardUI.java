@@ -272,9 +272,9 @@ public class StandardUI{
 			    
 			    Text sMode = new Text("Standard mode: ");
 			    Text bChoose = new Text("Choose button ");
-			    Text mFile = new Text("File Menu");
-			    Text mSave = new Text("Save Option ");
-			    Text mSaveAs = new Text("Save As Option ");
+			    Text mFile = new Text("File menu");
+			    Text mSave = new Text("Save option ");
+			    Text mSaveAs = new Text("Save As option ");
 			    Text bOrganize = new Text("Organize button ");
 			    
 			    sMode.setStyle("-fx-font-weight: bold;");
@@ -292,7 +292,7 @@ public class StandardUI{
 						 "3. Make sure to save the settings at this specific mode (at the same window or the main window) by clicking ");
 			    Text partThree = new Text(", and then ");
 			    Text partFour = new Text("or ");
-			    Text partFive = new Text("if you want to save in new saved setting\n\n"+"5. Click ");
+			    Text partFive = new Text("if you want to save in the new saved setting\n\n"+"5. Click ");
 			    Text partSix = new Text("to organize the folder's files based on their extension formats");
 		
 
