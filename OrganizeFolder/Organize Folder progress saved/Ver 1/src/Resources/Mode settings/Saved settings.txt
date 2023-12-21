@@ -1,3 +1,0 @@
-Theme mode: 1
-Type theme: Dark mode
-Type mode = 1
