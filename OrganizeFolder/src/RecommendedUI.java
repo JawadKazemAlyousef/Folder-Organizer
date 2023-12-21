@@ -269,9 +269,9 @@ public class RecommendedUI {
 			    
 			    Text rMode = new Text("Recommended mode: ");
 			    Text bChoose = new Text("Choose button ");
-			    Text mFile = new Text("File Menu");
-			    Text mSave = new Text("Save Option ");
-			    Text mSaveAs = new Text("Save As Option ");
+			    Text mFile = new Text("File menu");
+			    Text mSave = new Text("Save option ");
+			    Text mSaveAs = new Text("Save As option ");
 			    Text bOrganize = new Text("Organize button ");
 			    Text note = new Text("Note: ");
 
@@ -293,7 +293,7 @@ public class RecommendedUI {
 						 "4. Make sure to save the settings at this specific mode (at the same window) by clicking ");
 			    Text partThree = new Text(", and then ");
 			    Text partFour = new Text("or ");
-			    Text partFive = new Text("if you want to save in new saved setting\n\n"+"5. Click ");
+			    Text partFive = new Text("if you want to save in the new saved setting\n\n"+"5. Click ");
 			    Text partSix = new Text("to organize the folder's files based on my recommended choice\n\n");
 			    Text partSeven = new Text("If there are files' extension formats that are not in the recommended mode list, they will be automatically organized based on their extension formats");
 		
