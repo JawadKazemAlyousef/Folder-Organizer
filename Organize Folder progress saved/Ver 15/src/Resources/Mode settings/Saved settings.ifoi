@@ -1,0 +1,10 @@
+Images:
+{png, jpg}
+Videos:
+{avi, mkv}
+Documents:
+{txt, docx, pdf, xlsx}
+Compressed:
+{rar, zip, 7z}
+Programs:
+{exe, msi}
