@@ -22,7 +22,6 @@ import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.Stage;
 import javafx.stage.Window;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -32,7 +31,7 @@ import java.util.Scanner;
 
 
 
-public class OrganizeFolderMainUI extends OrganizeFolderDriver{
+public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 
 	
 

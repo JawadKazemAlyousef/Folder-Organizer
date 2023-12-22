@@ -1,7 +1,7 @@
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-public class OrganizeFolderDriver extends Application{
+public class FolderOrganizerDriver extends Application{
 
 
 	public static void main(String[] args) {
