@@ -8,6 +8,7 @@ module folderOrganizer{
 	requires javafx.swing;
 	requires javafx.web;
 	
+	opens folder.organizer;
 	exports folder.organizer;
 }
 

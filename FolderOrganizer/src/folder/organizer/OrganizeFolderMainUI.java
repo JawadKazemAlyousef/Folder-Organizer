@@ -548,8 +548,6 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
             getHelp().setText("Help");
             getAbout().setText("About");
             
-            getPrimaryStage().hide();
-            getPrimaryStage().show();
             
     		}	
     	else if(getLanguageMode() == 1){
@@ -571,8 +569,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
             getHelp().setText("مساعدة");
             getAbout().setText("حول");
             
-            getPrimaryStage().hide();
-            getPrimaryStage().show();
+            
     	}
     }
     

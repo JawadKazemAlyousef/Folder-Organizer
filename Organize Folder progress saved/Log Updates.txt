@@ -68,7 +68,7 @@ Log update Ver 17:
 	
 Log update Ver 18 final:
 	18th saved progress.
-	Last modify: Create module-info.java to remove VM arguments.
+	Last modify: Create module-info.java to remove VM arguments, update change language open in the middle.
 	
 	
 Upcoming after Ver 14:

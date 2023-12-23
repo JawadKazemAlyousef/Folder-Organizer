@@ -1,8 +1,8 @@
 
 module folderOrganizer{
 	requires transitive javafx.controls;
-	requires transitive javafx.graphics;
-	requires transitive javafx.base;
+	requires javafx.graphics;
+	requires javafx.base;
 	requires javafx.fxml;
 	requires javafx.media;
 	requires javafx.swing;
