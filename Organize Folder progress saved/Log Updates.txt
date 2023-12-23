@@ -62,9 +62,13 @@ Log update Ver 16:
 	16th saved progress.
 	Last modify: Complete checking for errors in format ifoi file when extract Info, make upload feature, compelte small popup info for error input name, resolve the issue when save and save as and open again in saved file (ends with ifoi [new line at the end]), complete organize button in customized mode.
 	
-Log update Ver 17 final:
-	18th saved progress.
+Log update Ver 17:
+	17th saved progress.
 	Last modify: Make help dialog in customized mode, and make caution dialog when successfully upload customized saved file.
+	
+Log update Ver 18 final:
+	18th saved progress.
+	Last modify: Create module-info.java to remove VM arguments, update change language open in the middle.
 	
 	
 Upcoming after Ver 14:
