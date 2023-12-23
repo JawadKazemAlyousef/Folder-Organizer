@@ -32,18 +32,18 @@
 2. انقر زر اختر لتختار المسار (موقع المجلد).<br><br>
 3. اختر المسار (موقع المجلد) الذي تريد أن ترتب ملفاته.<br><br>
 4. أنت تستطيع تخصيص تنظيمك يدويا، أو رفع تخزينتك المخصصة.<br><br>
-أ: بالنقر على زر خصص أنت تستطيع تخصيص تنظيمك يدويا.<br><br>
+أ. بالنقر على زر خصص أنت تستطيع تخصيص تنظيمك يدويا.<br><br>
 تأكد من نقر حسنا لتحديث تغيراتك الجديدة.<br><br>
-ب: بالنقر على زر ارفع،  أنت تستطيع رفع تخزينتك المخصصة.<br><br>
+ب. بالنقر على زر ارفع،  أنت تستطيع رفع تخزينتك المخصصة.<br><br>
 تأكد من اختيار تخزينتك بصيغة .ifoi ويكون المحتوى كهذا :<br><br>
 اسم_المجلد:<br><br>
 {اسم_الصيغة, اسم_الصيغة}<br><br>
 اسم_المجلد:<br><br>
 {اسم_الصيغة}<br><br>
 اسم_المجلد:<br><br>
-{}<br><br>
-      اسم_المجلد يجب أن يكون مسموحا، وممكن أن يكون من كلمات متعددة.<br><br>
-      اسم_الصيغة يجب أن يكون مسموحا دون نقطة (.)، وممكن أن يكون من كلمات متعددة.<br><br>
+{}<br><br>	
+اسم_المجلد يجب أن يكون مسموحا، وممكن أن يكون من كلمات متعددة.<br><br>
+اسم_الصيغة يجب أن يكون مسموحا دون نقطة (.)، وممكن أن يكون من كلمات متعددة.<br><br>
 5. تأكد من أنك حفظت الإعدادات بهذا الوضع (بنافذة الوضع المخصص) وهذا عن طريق نقر قائمة ملف، ثم خيار حفظ أو حفظ كـ إذا كنت تريد أن تحفظ الإعدادات بتخزينة جديدة.<br><br>
 6. انقر زر نظم لتنظم ملفات المجلد المختار حسب ما تخصصه.<br><br>
 ملاحظة: إذا كان هناك صيغ ملفات غير موجودة في قائمتك المخصصة، سترتب تلقائيا حسب صيغهم.
@@ -87,6 +87,7 @@ Note: If there are files' extension formats that are not in the recommended mode
 2. Click Choose button to select the path (the folder location).<br><br>
 3. Choose the path (the folder location) that you want to organize.<br><br>
 4. You can either manually customize your organization or upload your customized saved file.<br><br>
+				
   A. By clicking Customize button, you can manually customize your organization.<br><br>
      Make sure to click OK button to update the new changes.<br><br>
   B. By clicking Upload button, you can upload a customized saved file.<br><br>
