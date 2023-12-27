@@ -2,7 +2,7 @@ plugins {
   id 'java'
   id 'application'
   id 'eclipse'
-  id("org.openjfx.javafxplugin") version "0.1.0"
+  id "org.openjfx.javafxplugin" version "0.1.0"
 }
 
 
@@ -11,15 +11,18 @@ repositories {
     mavenCentral()
 }
 
+
 compileJava.options.encoding = 'UTF-8'
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
+tasks.withType(JavaExec){
+	 systemProperty "file.encoding", "utf-8"
+
 }
 
 test {
     systemProperty "file.encoding", "utf-8"
     useJUnitPlatform()
 }
+
 
 processResources{
 	from("src/main")
@@ -35,11 +38,14 @@ dependencies{
 	implementation group: 'org.openjfx', name: 'javafx-graphics', version: '21.0.1'
 	implementation group: 'org.openjfx', name: 'javafx-fxml', version: '21.0.1'
 	
+	
 }
 
 
+
+
 javafx {
-    version = "16"
+    version = "21.0.1"
     modules = [ 'javafx.controls', 'javafx.base', 'javafx.graphics', 'javafx.fxml']
 }
 

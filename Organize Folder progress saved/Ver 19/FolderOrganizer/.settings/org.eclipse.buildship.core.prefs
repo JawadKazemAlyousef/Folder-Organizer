@@ -1,5 +1,5 @@
 arguments=
-auto.sync=false
+auto.sync=true
 build.scans.enabled=false
 connection.gradle.distribution=GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(J\:\\My works\\eclipse tools and external libraries\\gradle\\gradle-8.5))
 connection.project.dir=
