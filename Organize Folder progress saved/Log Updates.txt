@@ -72,7 +72,7 @@ Log update Ver 18:
 	
 Log update Ver 19:
 	19th saved progress:
-	Last modify: Add Rename feature in custom dialog, and comvert my project to gradle Project
+	Last modify: Add Rename feature in custom dialog, and comvert my project to gradle Project.
 	
 Upcoming after Ver 14:
 	1. Save setting in customised mode. (done)
