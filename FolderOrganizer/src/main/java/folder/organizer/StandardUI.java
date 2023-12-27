@@ -162,11 +162,11 @@ public class StandardUI{
 		btnLogo.fitWidthProperty().bind(btn.widthProperty());
 		btnLogo.setPreserveRatio(true);
 		if(whichButton == 0) {
-			btnLogo.setImage(new Image(getClass().getResource("/Resources/Images/Back logo.png").toExternalForm()));
+			btnLogo.setImage(new Image(getClass().getResource("/resources/Images/Back logo.png").toExternalForm()));
 			btn.setGraphic(btnLogo);
 		}
 		else if(whichButton == 1) {
-			btnLogo.setImage(new Image(getClass().getResource("/Resources/Images/Help Logo.jpg").toExternalForm()));
+			btnLogo.setImage(new Image(getClass().getResource("/resources/Images/Help Logo.jpg").toExternalForm()));
 			btn.setGraphic(btnLogo);
 		}
         
@@ -341,11 +341,11 @@ public class StandardUI{
 			    	partFive.setStyle("-fx-font-weight: normal; -fx-fill: white;");
 			    	partSix.setStyle("-fx-font-weight: normal; -fx-fill: white;");
 			    	
-			    	helpDialog.getStylesheets().add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+			    	helpDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
 			    	helpDialog.getStyleClass().add("Dark mode theme");
 		
 			    }
-			    Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+			    Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
 			    Stage stageIcon = (Stage) window;
 			    stageIcon.getIcons().add(programIcon);
 		 	   		
@@ -431,11 +431,11 @@ public class StandardUI{
 		    	partFive.setStyle("-fx-font-weight: normal; -fx-fill: white;");
 		    	partSix.setStyle("-fx-font-weight: normal; -fx-fill: white;");
 		    	
-		    	helpDialog.getStylesheets().add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+		    	helpDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
 		    	helpDialog.getStyleClass().add("Dark mode theme");
 	
 		    }
-		    Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+		    Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
 		    Stage stageIcon = (Stage) window;
 		    stageIcon.getIcons().add(programIcon);
 	 	   		
@@ -501,11 +501,11 @@ public class StandardUI{
 			    
  	 		    if(mainObj.getThemeMode() == 1) {
  	 		    	content.setStyle("-fx-fill: white;");
- 	 		    	errorDialog.getStylesheets().add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+ 	 		    	errorDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
  	 		    	errorDialog.getStyleClass().add("Dark mode theme");
  	 	
  	 		    }
- 	 		    Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+ 	 		    Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
  	 		    Stage stageIcon = (Stage) window;
  	 		    stageIcon.getIcons().add(programIcon);
  	 	 	   		
@@ -542,11 +542,11 @@ public class StandardUI{
 			    
  	 		    if(mainObj.getThemeMode() == 1) {
  	 		    	content.setStyle("-fx-fill: white;");
- 	 		    	errorDialog.getStylesheets().add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+ 	 		    	errorDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
  	 		    	errorDialog.getStyleClass().add("Dark mode theme");
  	 	
  	 		    }
- 	 		    Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+ 	 		    Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
  	 		    Stage stageIcon = (Stage) window;
  	 		    stageIcon.getIcons().add(programIcon);
  	 	 	   		
@@ -634,12 +634,12 @@ public class StandardUI{
 			    
  	 		    if(mainObj.getThemeMode() == 1) {
  	 		    	content.setStyle("-fx-fill: white;");
- 	 		    	doneDialog.getStylesheets().add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+ 	 		    	doneDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
  	 		    	doneDialog.getStyleClass().add("Dark mode theme");
  	 	
  	 		    }
  	 		    	
- 	 		  Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+ 	 		  Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
 	 		    Stage stageIcon = (Stage) window;
 	 		    stageIcon.getIcons().add(programIcon);
 	 	 	   		
@@ -676,12 +676,12 @@ public class StandardUI{
 			    
  	 		    if(mainObj.getThemeMode() == 1) {
  	 		    	content.setStyle("-fx-fill: white;");
- 	 		    	doneDialog.getStylesheets().add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+ 	 		    	doneDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
  	 		    	doneDialog.getStyleClass().add("Dark mode theme");
  	 	
  	 		    }
  	 		    	
- 	 		  Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+ 	 		  Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
 	 		    Stage stageIcon = (Stage) window;
 	 		    stageIcon.getIcons().add(programIcon);
 	 	 	   		
@@ -719,12 +719,12 @@ public class StandardUI{
 			    
  	 		    if(mainObj.getThemeMode() == 1) {
  	 		    	content.setStyle("-fx-fill: white;");
- 	 		    	doneDialog.getStylesheets().add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+ 	 		    	doneDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
  	 		    	doneDialog.getStyleClass().add("Dark mode theme");
  	 	
  	 		    }
  	 		    	
- 	 		  Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+ 	 		  Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
 	 		    Stage stageIcon = (Stage) window;
 	 		    stageIcon.getIcons().add(programIcon);
 	 	 	   		
@@ -761,12 +761,12 @@ public class StandardUI{
  			    
  	 		    if(mainObj.getThemeMode() == 1) {
  	 		    	content.setStyle("-fx-fill: white;");
- 	 		    	doneDialog.getStylesheets().add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+ 	 		    	doneDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
  	 		    	doneDialog.getStyleClass().add("Dark mode theme");
  	 	
  	 		    }
  	 		    	
- 	 		  Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+ 	 		  Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
 	 		    Stage stageIcon = (Stage) window;
 	 		    stageIcon.getIcons().add(programIcon);
 	 	 	   		
