@@ -11,15 +11,15 @@ repositories {
     mavenCentral()
 }
 
+
 compileJava.options.encoding = 'UTF-8'
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
-}
+
 
 test {
     systemProperty "file.encoding", "utf-8"
     useJUnitPlatform()
 }
+
 
 processResources{
 	from("src/main")
@@ -39,7 +39,7 @@ dependencies{
 
 
 javafx {
-    version = "16"
+    version = "21.0.1"
     modules = [ 'javafx.controls', 'javafx.base', 'javafx.graphics', 'javafx.fxml']
 }
 
