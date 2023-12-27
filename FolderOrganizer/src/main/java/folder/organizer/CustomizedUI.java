@@ -1243,6 +1243,8 @@ public class CustomizedUI {
 				foldersClearButton.setDisable(false);
 				extensionsRenameButton.setDisable(true);
 				extensionsClearButton.setDisable(true);
+
+				
 				System.out.println(
 						"your selection: " + foldersItems.get(foldersList.getSelectionModel().getSelectedIndex()));
 				if (extensionsForEachFolder.get(foldersList.getSelectionModel().getSelectedIndex()).isEmpty()) {
