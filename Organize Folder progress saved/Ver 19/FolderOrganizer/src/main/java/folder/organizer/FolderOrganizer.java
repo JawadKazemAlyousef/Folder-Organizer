@@ -1,20 +1,9 @@
 package folder.organizer;
-<<<<<<< HEAD
 
-
-public class FolderOrganizerDriver{
-
-
-	public static void main(String[] args) {
-		FolderOrganizer.main(args);
-       
-    }
-=======
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-public class FolderOrganizerDriver extends Application{
-
+public class FolderOrganizer extends Application {
 
 	public static void main(String[] args) {
 		launch(args);
@@ -26,9 +15,5 @@ public class FolderOrganizerDriver extends Application{
 			OrganizeFolderMainUI mainObj = new OrganizeFolderMainUI();
 			mainObj.MainUI(mainObj, false);
 	}
->>>>>>> refs/heads/master
-    
-    
 
 }
-    

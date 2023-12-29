@@ -195,10 +195,10 @@ public class CustomizedUI {
 		btnLogo.fitWidthProperty().bind(btn.widthProperty());
 		btnLogo.setPreserveRatio(true);
 		if (whichButton == 0) {
-			btnLogo.setImage(new Image(getClass().getResource("/Resources/Images/Back logo.png").toExternalForm()));
+			btnLogo.setImage(new Image(new File("resources/Images/Back logo.png").toURI().toString()));
 			btn.setGraphic(btnLogo);
 		} else if (whichButton == 1) {
-			btnLogo.setImage(new Image(getClass().getResource("/Resources/Images/Help Logo.jpg").toExternalForm()));
+			btnLogo.setImage(new Image(new File("resources/Images/Help Logo.jpg").toURI().toString()));
 			btn.setGraphic(btnLogo);
 		}
 
@@ -516,11 +516,11 @@ public class CustomizedUI {
 				partTen.setStyle("-fx-font-weight: normal; -fx-fill: white;");
 
 				helpDialog.getStylesheets()
-						.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+						.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 				helpDialog.getStyleClass().add("Dark mode theme");
 
 			}
-			Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+			Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 			Stage stageIcon = (Stage) window;
 			stageIcon.getIcons().add(programIcon);
 
@@ -632,11 +632,11 @@ public class CustomizedUI {
 				partTen.setStyle("-fx-font-weight: normal; -fx-fill: white;");
 
 				helpDialog.getStylesheets()
-						.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+						.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 				helpDialog.getStyleClass().add("Dark mode theme");
 
 			}
-			Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+			Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 			Stage stageIcon = (Stage) window;
 			stageIcon.getIcons().add(programIcon);
 
@@ -673,7 +673,8 @@ public class CustomizedUI {
 
 	public void uploadSetting(OrganizeFolderMainUI mainObj) {
 
-		File recommendedPath = new File("src/Resources/Mode settings");
+		File recommendedPath = new File("resources/Mode settings");
+		System.out.println(recommendedPath);
 		FileChooser uploadController = new FileChooser();
 		uploadController.setTitle("Upload");
 		uploadController.getExtensionFilters().addAll(new ExtensionFilter("ifoi", "*.ifoi*"));
@@ -717,11 +718,11 @@ public class CustomizedUI {
 				if (mainObj.getThemeMode() == 1) {
 					content.setStyle("-fx-fill: white; -fx-font-weight: normal;");
 					cautionDialog.getStylesheets()
-							.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+							.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 					cautionDialog.getStyleClass().add("Dark mode theme");
 
 				}
-				Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+				Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 				Stage stageIcon = (Stage) window;
 				stageIcon.getIcons().add(programIcon);
 
@@ -758,11 +759,11 @@ public class CustomizedUI {
 				if (mainObj.getThemeMode() == 1) {
 					content.setStyle("-fx-fill: white; -fx-font-weight: normal;");
 					cautionDialog.getStylesheets()
-							.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+							.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 					cautionDialog.getStyleClass().add("Dark mode theme");
 
 				}
-				Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+				Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 				Stage stageIcon = (Stage) window;
 				stageIcon.getIcons().add(programIcon);
 
@@ -890,11 +891,11 @@ public class CustomizedUI {
 					if (mainObj.getThemeMode() == 1) {
 						content.setStyle("-fx-fill: white;");
 						errorDialog.getStylesheets()
-								.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+								.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 						errorDialog.getStyleClass().add("Dark mode theme");
 
 					}
-					Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+					Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 					Stage stageIcon = (Stage) window;
 					stageIcon.getIcons().add(programIcon);
 
@@ -929,11 +930,11 @@ public class CustomizedUI {
 					if (mainObj.getThemeMode() == 1) {
 						content.setStyle("-fx-fill: white;");
 						errorDialog.getStylesheets()
-								.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+								.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 						errorDialog.getStyleClass().add("Dark mode theme");
 
 					}
-					Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+					Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 					Stage stageIcon = (Stage) window;
 					stageIcon.getIcons().add(programIcon);
 
@@ -986,7 +987,13 @@ public class CustomizedUI {
 
 		Stage customStage = new Stage();
 		BorderPane customMainPane = new BorderPane();
-		Scene customScene = new Scene(customMainPane, 725, 725);
+		Scene customScene = null;
+		if(mainObj.getLanguageMode() == 0) {
+			customScene = new Scene(customMainPane, 825, 725);
+		}
+		else if(mainObj.getLanguageMode() == 1) {
+			customScene = new Scene(customMainPane, 890, 725);
+		}
 
 		// Folder section
 		ListView<String> foldersList = new ListView<String>();
@@ -1002,23 +1009,35 @@ public class CustomizedUI {
 		Label foldersLabel = new Label("Folders");
 
 		Button foldersAddButton = new Button("Add");
+		Button foldersRenameButton = new Button("Rename");
 		Button foldersClearButton = new Button("Clear");
 		Button foldersClearAllButton = new Button("Clear All");
+		
 
 		TextField foldersTextField = new TextField();
 		Label validateTextFolderError = new Label("");
 		validateTextFolderError.setVisible(false);
 
 		foldersAddButton.setDisable(true);
+		foldersRenameButton.setDisable(true);
 		foldersClearButton.setDisable(true);
+		if(foldersNames.isEmpty()) {
+			foldersClearAllButton.setDisable(true);
+
+		}
+		else {
+			foldersClearAllButton.setDisable(false);
+
+		}
 		foldersAddButton.setStyle("-fx-background-radius: 90px;");
+		foldersRenameButton.setStyle("-fx-background-radius: 90px;");
 		foldersClearButton.setStyle("-fx-background-radius: 90px;");
 		foldersClearAllButton.setStyle("-fx-background-radius: 90px;");
 
 		HBox foldersTextFieldAndButton = new HBox();
 		foldersTextFieldAndButton.setSpacing(10);
 		foldersTextFieldAndButton.setAlignment(Pos.CENTER);
-		foldersTextFieldAndButton.getChildren().addAll(foldersTextField, foldersAddButton, foldersClearButton,
+		foldersTextFieldAndButton.getChildren().addAll(foldersTextField, foldersAddButton, foldersRenameButton, foldersClearButton,
 				foldersClearAllButton);
 
 		foldersVBox.setSpacing(10);
@@ -1048,6 +1067,7 @@ public class CustomizedUI {
 		Label extensionsLabel = new Label("Extensions");
 
 		Button extensionsAddButton = new Button("Add");
+		Button extensionsRenameButton = new Button("Rename");
 		Button extensionsClearButton = new Button("Clear");
 		Button extensionsClearAllButton = new Button("Clear All");
 
@@ -1057,16 +1077,18 @@ public class CustomizedUI {
 		extensionsTextField.setDisable(true);
 
 		extensionsAddButton.setDisable(true);
+		extensionsRenameButton.setDisable(true);
 		extensionsClearButton.setDisable(true);
 		extensionsClearAllButton.setDisable(true);
 		extensionsAddButton.setStyle("-fx-background-radius: 90px;");
+		extensionsRenameButton.setStyle("-fx-background-radius: 90px;");
 		extensionsClearButton.setStyle("-fx-background-radius: 90px;");
 		extensionsClearAllButton.setStyle("-fx-background-radius: 90px;");
 
 		HBox extensionsTextFieldAndButton = new HBox();
 		extensionsTextFieldAndButton.setSpacing(10);
 		extensionsTextFieldAndButton.setAlignment(Pos.CENTER);
-		extensionsTextFieldAndButton.getChildren().addAll(extensionsTextField, extensionsAddButton,
+		extensionsTextFieldAndButton.getChildren().addAll(extensionsTextField, extensionsAddButton, extensionsRenameButton,
 				extensionsClearButton, extensionsClearAllButton);
 
 		extensionsVBox.setSpacing(10);
@@ -1082,6 +1104,7 @@ public class CustomizedUI {
 					|| (mainObj.getPathFolder() + "\\" + foldersTextField.getText()).length() > 261) {
 				System.out.println("Error");
 				foldersAddButton.setDisable(true);
+				foldersRenameButton.setDisable(true);
 				if (!foldersTextField.getText().trim().equals("")) {
 					validateTextFolderError.setVisible(true);
 					validateTextFolderError.setText("Invalid folder's name");
@@ -1110,7 +1133,7 @@ public class CustomizedUI {
 				if (isDuplicate) {
 					System.out.println("There is the folder with the same name");
 					foldersAddButton.setDisable(true);
-
+					foldersRenameButton.setDisable(true);
 					validateTextFolderError.setVisible(true);
 					validateTextFolderError.setText("There is an identical folder's name");
 					if (mainObj.getLanguageMode() == 1) {
@@ -1123,6 +1146,12 @@ public class CustomizedUI {
 				} else {
 					System.out.println("Correct");
 					foldersAddButton.setDisable(false);
+					if(!foldersList.getSelectionModel().isEmpty()) {
+						foldersRenameButton.setDisable(false);
+					}
+					else {
+						foldersRenameButton.setDisable(true);
+					}
 
 					validateTextFolderError.setVisible(false);
 					validateTextFolderError.setText("");
@@ -1131,6 +1160,21 @@ public class CustomizedUI {
 
 				}
 
+			}
+		});
+		
+		foldersTextField.setOnAction(e ->{
+			if(!foldersAddButton.isDisabled()) {
+				foldersNames.add(foldersTextField.getText());
+				foldersItems.setAll(foldersNames);
+				extensionsForEachFolder.add(new ArrayList<String>());
+
+				setIsUpdateInfoViaCustom(true);
+				foldersTextField.setText("");
+				foldersAddButton.setDisable(true);
+				foldersClearAllButton.setDisable(false);
+				
+				foldersRenameButton.setDisable(true);
 			}
 		});
 
@@ -1143,7 +1187,21 @@ public class CustomizedUI {
 			setIsUpdateInfoViaCustom(true);
 			foldersTextField.setText("");
 			foldersAddButton.setDisable(true);
+			foldersClearAllButton.setDisable(false);
+			
+			foldersRenameButton.setDisable(true);
 
+		});
+		
+		foldersRenameButton.setOnAction(e ->{
+			
+			foldersNames.set(foldersList.getSelectionModel().getSelectedIndex(), foldersTextField.getText());
+			foldersItems.setAll(foldersNames);
+			setIsUpdateInfoViaCustom(true);
+			foldersTextField.setText("");
+			foldersAddButton.setDisable(true);			
+			foldersRenameButton.setDisable(true);
+			
 		});
 
 		foldersClearButton.setOnAction(e -> {
@@ -1154,13 +1212,22 @@ public class CustomizedUI {
 				extensionsItems.setAll();
 				extensionsTextField.setDisable(true);
 				extensionsAddButton.setDisable(true);
+				extensionsRenameButton.setDisable(true);
 				extensionsClearButton.setDisable(true);
 				extensionsClearAllButton.setDisable(true);
 				extensionsList.setDisable(true);
 
 				foldersClearButton.setDisable(true);
+				foldersRenameButton.setDisable(true);
+
 
 				setIsUpdateInfoViaCustom(true);
+				
+				if(foldersList.getItems().isEmpty()) {
+					foldersClearAllButton.setDisable(true);
+					foldersTextField.setText(foldersTextField.getText());
+				}
+				
 
 			}
 		});
@@ -1172,11 +1239,15 @@ public class CustomizedUI {
 			foldersItems.setAll();
 			extensionsTextField.setDisable(true);
 			extensionsAddButton.setDisable(true);
+			extensionsRenameButton.setDisable(true);
 			extensionsClearButton.setDisable(true);
 			extensionsClearAllButton.setDisable(true);
 			extensionsList.setDisable(true);
 
 			foldersClearButton.setDisable(true);
+			foldersClearAllButton.setDisable(true);
+			foldersRenameButton.setDisable(true);
+
 
 			setIsUpdateInfoViaCustom(true);
 
@@ -1186,6 +1257,10 @@ public class CustomizedUI {
 //	    	 System.out.println(foldersList.getSelectionModel().isEmpty());
 			if (!foldersList.getSelectionModel().isEmpty()) {
 				foldersClearButton.setDisable(false);
+				extensionsRenameButton.setDisable(true);
+				extensionsClearButton.setDisable(true);
+
+				
 				System.out.println(
 						"your selection: " + foldersItems.get(foldersList.getSelectionModel().getSelectedIndex()));
 				if (extensionsForEachFolder.get(foldersList.getSelectionModel().getSelectedIndex()).isEmpty()) {
@@ -1202,10 +1277,45 @@ public class CustomizedUI {
 				}
 
 				extensionsTextField.setDisable(false);
-				extensionsClearAllButton.setDisable(false);
 				extensionsList.setDisable(false);
-				extensionsClearButton.setDisable(true);
+				
+				if(extensionsList.getItems().isEmpty()) {
+					extensionsClearAllButton.setDisable(true);
+				}
+				else {
+					extensionsClearAllButton.setDisable(false);
+				}
+				
+//					 System.out.println(mainObj.getPathFolder().getText());
+				if (!isValidName(foldersTextField.getText())
+						|| (mainObj.getPathFolder() + "\\" + foldersTextField.getText()).length() > 261) {
+//						System.out.println("Error");
+						foldersRenameButton.setDisable(true);
+						
 
+				} else {
+						boolean isDuplicate = false;
+						for (int i = 0; i < foldersItems.size(); i++) {
+							if (foldersTextField.getText().toLowerCase().equals(foldersItems.get(i).toLowerCase())) {
+								isDuplicate = true;
+								break;
+							}
+						}
+						if (isDuplicate) {
+//							System.out.println("There is the folder with the same name");
+							foldersRenameButton.setDisable(true);
+
+						} else {
+//							System.out.println("Correct");
+							if(!foldersList.getSelectionModel().isEmpty()) {
+								foldersRenameButton.setDisable(false);
+							}
+							else {
+								foldersRenameButton.setDisable(true);
+							}
+						}
+
+				}
 			}
 
 		});
@@ -1215,6 +1325,7 @@ public class CustomizedUI {
 			if (!isValidName(extensionsTextField.getText()) || extensionsTextField.getText().length() > 20) {
 				System.out.println("Error");
 				extensionsAddButton.setDisable(true);
+				extensionsRenameButton.setDisable(true);
 
 				if (!extensionsTextField.getText().trim().equals("")) {
 					validateTextExtensionError.setVisible(true);
@@ -1236,6 +1347,7 @@ public class CustomizedUI {
 			} else if (extensionsTextField.getText().contains(".")) {
 				System.out.println("Contain .");
 				extensionsAddButton.setDisable(true);
+				extensionsRenameButton.setDisable(true);
 
 				validateTextExtensionError.setVisible(true);
 				validateTextExtensionError.setText("The extension's name contains dot (.)");
@@ -1261,6 +1373,8 @@ public class CustomizedUI {
 				if (isDuplicate) {
 					System.out.println("There is same extenstion in somewhere else");
 					extensionsAddButton.setDisable(true);
+					extensionsRenameButton.setDisable(true);
+
 
 					validateTextExtensionError.setVisible(true);
 					validateTextExtensionError.setText("There is an identical extenstion's name in these lists");
@@ -1273,6 +1387,13 @@ public class CustomizedUI {
 				} else {
 					System.out.println("Correct");
 					extensionsAddButton.setDisable(false);
+					
+					if(!extensionsList.getSelectionModel().isEmpty()) {
+						extensionsRenameButton.setDisable(false);
+					}
+					else {
+						extensionsRenameButton.setDisable(true);
+					}
 
 					validateTextExtensionError.setVisible(false);
 					validateTextExtensionError.setText("");
@@ -1281,6 +1402,20 @@ public class CustomizedUI {
 
 				}
 
+			}
+		});
+		
+		extensionsTextField.setOnAction(e ->{
+			if(!extensionsAddButton.isDisabled()) {
+				extensionsForEachFolder.get(foldersList.getSelectionModel().getSelectedIndex())
+					.add(extensionsTextField.getText().trim());
+				extensionsItems.setAll(extensionsForEachFolder.get(foldersList.getSelectionModel().getSelectedIndex()));
+
+				setIsUpdateInfoViaCustom(true);
+				extensionsTextField.setText("");
+				extensionsAddButton.setDisable(true);
+				extensionsRenameButton.setDisable(true);
+				extensionsClearAllButton.setDisable(false);
 			}
 		});
 
@@ -1292,7 +1427,21 @@ public class CustomizedUI {
 			setIsUpdateInfoViaCustom(true);
 			extensionsTextField.setText("");
 			extensionsAddButton.setDisable(true);
+			extensionsRenameButton.setDisable(true);
+			extensionsClearAllButton.setDisable(false);
 
+		});
+		
+		extensionsRenameButton.setOnAction(e -> {
+			extensionsForEachFolder.get(foldersList.getSelectionModel().getSelectedIndex())
+			.set(extensionsList.getSelectionModel().getSelectedIndex(),extensionsTextField.getText().trim());
+			
+			extensionsItems.setAll(extensionsForEachFolder.get(foldersList.getSelectionModel().getSelectedIndex()));
+
+			setIsUpdateInfoViaCustom(true);
+			extensionsTextField.setText("");
+			extensionsAddButton.setDisable(true);
+			extensionsRenameButton.setDisable(true);
 		});
 
 		extensionsClearButton.setOnAction(e -> {
@@ -1302,7 +1451,12 @@ public class CustomizedUI {
 				extensionsItems.setAll(extensionsForEachFolder.get(foldersList.getSelectionModel().getSelectedIndex()));
 
 				extensionsClearButton.setDisable(true);
+				extensionsRenameButton.setDisable(true);
 				setIsUpdateInfoViaCustom(true);
+				
+				if(extensionsList.getItems().isEmpty()) {
+					extensionsClearAllButton.setDisable(true);
+				}
 
 			}
 
@@ -1314,12 +1468,56 @@ public class CustomizedUI {
 
 			extensionsClearButton.setDisable(true);
 			setIsUpdateInfoViaCustom(true);
+			extensionsClearAllButton.setDisable(true);
+			extensionsRenameButton.setDisable(true);
+
 
 		});
-
+		
 		extensionsList.setOnMouseClicked(e -> {
 			extensionsClearButton.setDisable(false);
+			
+			if (!isValidName(extensionsTextField.getText()) || extensionsTextField.getText().length() > 20) {
+//				System.out.println("Error");
+				extensionsRenameButton.setDisable(true);
+
+			} else if (extensionsTextField.getText().contains(".")) {
+//				System.out.println("Contain .");
+				extensionsRenameButton.setDisable(true);
+
+			} else {
+				boolean isDuplicate = false;
+				for (int i = 0; i < extensionsForEachFolder.size(); ++i) {
+					for (int j = 0; j < extensionsForEachFolder.get(i).size(); ++j)
+						if (extensionsTextField.getText().toLowerCase()
+								.equals(extensionsForEachFolder.get(i).get(j).toLowerCase())) {
+							isDuplicate = true;
+							break;
+						}
+					if (isDuplicate) {
+						break;
+					}
+				}
+				if (isDuplicate) {
+//					System.out.println("There is same extenstion in somewhere else");
+					extensionsRenameButton.setDisable(true);
+					
+				} else {
+//					System.out.println("Correct");
+					
+					if(!extensionsList.getSelectionModel().isEmpty()) {
+						extensionsRenameButton.setDisable(false);
+					}
+					else {
+						extensionsRenameButton.setDisable(true);
+					}
+
+				}
+
+			}
 		});
+		
+		
 
 		HBox centerBox = new HBox();
 		centerBox.getChildren().addAll(foldersVBox, extensionsVBox);
@@ -1376,11 +1574,11 @@ public class CustomizedUI {
 					if (mainObj.getThemeMode() == 1) {
 						content.setStyle("-fx-fill: white; -fx-font-weight: normal;");
 						cautionDialog.getStylesheets()
-								.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+								.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 						cautionDialog.getStyleClass().add("Dark mode theme");
 
 					}
-					Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+					Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 					Stage stageIcon = (Stage) window;
 					stageIcon.getIcons().add(programIcon);
 
@@ -1417,11 +1615,11 @@ public class CustomizedUI {
 					if (mainObj.getThemeMode() == 1) {
 						content.setStyle("-fx-fill: white; -fx-font-weight: normal;");
 						cautionDialog.getStylesheets()
-								.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+								.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 						cautionDialog.getStyleClass().add("Dark mode theme");
 
 					}
-					Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+					Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 					Stage stageIcon = (Stage) window;
 					stageIcon.getIcons().add(programIcon);
 
@@ -1460,7 +1658,7 @@ public class CustomizedUI {
 		customMainPane.setCenter(centerBox);
 		customMainPane.setBottom(downButtons);
 
-		Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+		Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 
 		customStage.setResizable(false);
 		customStage.getIcons().add(programIcon);
@@ -1478,12 +1676,14 @@ public class CustomizedUI {
 			// folders
 			foldersLabel.setText("المجلدات");
 			foldersAddButton.setText("أضف");
+			foldersRenameButton.setText("اعد التسمية");
 			foldersClearButton.setText("احذف");
 			foldersClearAllButton.setText("احذف الكل");
 
 			// extensions
 			extensionsLabel.setText("الصيغ");
 			extensionsAddButton.setText("أضف");
+			extensionsRenameButton.setText("اعد التسمية");
 			extensionsClearButton.setText("احذف");
 			extensionsClearAllButton.setText("احذف الكل");
 
@@ -1530,11 +1730,11 @@ public class CustomizedUI {
 				if (mainObj.getThemeMode() == 1) {
 					content.setStyle("-fx-fill: white;");
 					errorDialog.getStylesheets()
-							.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+							.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 					errorDialog.getStyleClass().add("Dark mode theme");
 
 				}
-				Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+				Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 				Stage stageIcon = (Stage) window;
 				stageIcon.getIcons().add(programIcon);
 
@@ -1569,11 +1769,11 @@ public class CustomizedUI {
 				if (mainObj.getThemeMode() == 1) {
 					content.setStyle("-fx-fill: white;");
 					errorDialog.getStylesheets()
-							.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+							.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 					errorDialog.getStyleClass().add("Dark mode theme");
 
 				}
-				Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+				Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 				Stage stageIcon = (Stage) window;
 				stageIcon.getIcons().add(programIcon);
 
@@ -1686,12 +1886,12 @@ public class CustomizedUI {
 				if (mainObj.getThemeMode() == 1) {
 					content.setStyle("-fx-fill: white;");
 					doneDialog.getStylesheets()
-							.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+							.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 					doneDialog.getStyleClass().add("Dark mode theme");
 
 				}
 
-				Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+				Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 				Stage stageIcon = (Stage) window;
 				stageIcon.getIcons().add(programIcon);
 
@@ -1728,12 +1928,12 @@ public class CustomizedUI {
 				if (mainObj.getThemeMode() == 1) {
 					content.setStyle("-fx-fill: white;");
 					doneDialog.getStylesheets()
-							.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+							.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 					doneDialog.getStyleClass().add("Dark mode theme");
 
 				}
 
-				Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+				Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 				Stage stageIcon = (Stage) window;
 				stageIcon.getIcons().add(programIcon);
 
@@ -1772,12 +1972,12 @@ public class CustomizedUI {
 				if (mainObj.getThemeMode() == 1) {
 					content.setStyle("-fx-fill: white;");
 					doneDialog.getStylesheets()
-							.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+							.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 					doneDialog.getStyleClass().add("Dark mode theme");
 
 				}
 
-				Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+				Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 				Stage stageIcon = (Stage) window;
 				stageIcon.getIcons().add(programIcon);
 
@@ -1815,12 +2015,12 @@ public class CustomizedUI {
 				if (mainObj.getThemeMode() == 1) {
 					content.setStyle("-fx-fill: white;");
 					doneDialog.getStylesheets()
-							.add(getClass().getResource("/Resources/Styles/Dark mode theme.css").toExternalForm());
+							.add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 					doneDialog.getStyleClass().add("Dark mode theme");
 
 				}
 
-				Image programIcon = new Image(getClass().getResource("/Resources/Images/Program icon.png").toExternalForm());
+				Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 				Stage stageIcon = (Stage) window;
 				stageIcon.getIcons().add(programIcon);
 

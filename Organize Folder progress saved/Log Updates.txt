@@ -70,9 +70,15 @@ Log update Ver 18:
 	18th saved progress.
 	Last modify: Create module-info.java to remove VM arguments, update change language open in the middle.
 	
+<<<<<<< HEAD
+Log update Ver 19 (final):
+	19th saved progress:
+	Last modify: Add Rename feature in custom dialog, convert my project to gradle Project, with correct utf-8 errors, and compelte gradle program with fatjar.
+=======
 Log update Ver 19:
 	19th saved progress:
 	Last modify: Add Rename feature in custom dialog, and comvert my project to gradle Project.
+>>>>>>> refs/heads/master
 	
 Upcoming after Ver 14:
 	1. Save setting in customised mode. (done)
