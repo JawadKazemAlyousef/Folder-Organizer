@@ -49,7 +49,7 @@
 ملاحظة: إذا كان هناك صيغ ملفات غير موجودة في قائمتك المخصصة، سترتب تلقائيا حسب صيغهم.
 	</h5>
   	<h2>
-																					البرنامج اختبر وجرب بصيغة جار و اي اكس اي بالويندوز فقط (بصيغة jar، من الممكن أن يعمل بنظام الماك واللينكس) 
+																					البرنامج اختبر وجرب بصيغة جار و اي اكس اي بالويندوز فقط (بصيغة jar، من الممكن أن يعمل بنظام الماك واللينكس)<br><br>
 مبرمج البرنامج جواد اليوسف<br><br>
 البرنامج مفتوح المصدر، يمكنك استخدامه وتعديل الكود إن أردت تحسينه<br><br>
 لا تنس أن تنسب الفضل لي في العمل الأصلي<br><br>
@@ -106,7 +106,7 @@ Extension_name must be a valid name without a dot (.), and it can be multiple wo
 Note: If there are files' extension formats that are not in your customized list, they will be automatically organized based on their extension formats.<br><br>
 	</h5>
   	 <h2>
-The program is tested and tried as jar and exe in Windows only (As jar, maybe it works in Mac and Linux OS)
+The program is tested and tried as jar and exe in Windows only (As jar, maybe it works in Mac and Linux OS)<br><br>
 The program is programmed by Jawad Alyousef<br><br>
 The program is open-source, you can use it and modify it if you want to improve it<br><br>
 Don't forget to give me credit for the original work <br><br>
