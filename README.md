@@ -4,6 +4,20 @@
 
 <div align-text=left>
 	<h1>منظم الملفات</h1>
+		<h2>
+																					البرنامج اختبر وجرب بصيغة جار و اي اكس اي بالويندوز فقط (بصيغة jar، من الممكن أن يعمل بنظام الماك واللينكس)<br><br>
+مبرمج البرنامج جواد اليوسف<br><br>
+البرنامج مفتوح المصدر، يمكنك استخدامه وتعديل الكود إن أردت تحسينه<br><br>
+لا تنس أن تنسب الفضل لي في العمل الأصلي<br><br>
+الإصدار: 1 <br><br>
+للتواصل معي: Jawadkazemalyousef@gmail.com <br><br>
+حقوق النشر (C) 2023 جواد كاظم اليوسف<br><br>
+  	 </h2>
+	<h4>
+		المتطلبات:<br><br>
+1. تحميل جافا نسخة 17.0.9 أو أعلى عن طريق https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html. <br><br>
+2. ضع متغير بيئة متعلق بجافا عن طريق الذهاب لجهاز الكمبيوتر، ونقر على زر الفأرة الأيمن، ثم نقر خصائص، ثم نقر إعدادات النظام المتقدمة، ثم نقر متغيرات البيئة، ثم نقر جديد، ثم ضع متغير باسم %JAVA_HOME% ثم ضع قيمته مسار java/jdk-17/jav/bin الذي يكون في القرص المحلي C مع البرامج إذا كان هناك هالمتغير تأكد من جعل قيمته المسار المذكور سابقا ومن ثم اذهب لل path سواء في النظام أو المستخدم وضع المسار مجددا هناك.<br><br>
+	</h4>
 	<h2>الغرض من منظم الملفات تنظيم ملفات المجلد المختار حسب ثلاثة أوضاع:</h2>
  	<h3>1. الوضع العادي: نظم ملفات المجلد المختار حسب صيغهم.</h3>
  	<h4>التعليمات:</h4>
@@ -48,19 +62,24 @@
 6. انقر زر نظم لتنظم ملفات المجلد المختار حسب ما تخصصه.<br><br>
 ملاحظة: إذا كان هناك صيغ ملفات غير موجودة في قائمتك المخصصة، سترتب تلقائيا حسب صيغهم.
 	</h5>
-  	<h2>
-																					البرنامج اختبر وجرب بصيغة جار و اي اكس اي بالويندوز فقط (بصيغة jar، من الممكن أن يعمل بنظام الماك واللينكس)<br><br>
-مبرمج البرنامج جواد اليوسف<br><br>
-البرنامج مفتوح المصدر، يمكنك استخدامه وتعديل الكود إن أردت تحسينه<br><br>
-لا تنس أن تنسب الفضل لي في العمل الأصلي<br><br>
-الإصدار: 1 <br><br>
-للتواصل معي: Jawadkazemalyousef@gmail.com <br><br>
-حقوق النشر (C) 2023 جواد كاظم اليوسف
-  	 </h2>
     <h2 align=center>شكرا لكم</h2>
 </div>
 <div>
 	<h1>Folder Organizer</h1>
+	  	 <h2>
+The program is tested and tried as jar and exe in Windows only (As jar, maybe it works in Mac and Linux OS)<br><br>
+The program is programmed by Jawad Alyousef<br><br>
+The program is open-source, you can use it and modify it if you want to improve it<br><br>
+Don't forget to give me credit for the original work <br><br>
+Version: 1 <br><br>
+Contact me: Jawadkazemalyousef@gmail.com <br><br>
+Copyright (C) 2023 Jawad kazem Alyousef <br><br>
+	 </h2>
+	<h4>
+Requirements:<br><br>
+1. Download java version 17.0.9 or higher via https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html. <br><br>
+2. Set environment variable related to java by going to your computer, and then click mouse right click, and then click properties, and then click Advanced system settings, and then click Environment Variables, and then click new, and then set variable name %JAVA_HOME% and set its value as the path java/jdk-17/jav/bin that you can find with your programs in C Disk if this variable exist, make sure to make its value as the mentioned path, and then go to path either by system or user, and set the mentioned path agian.
+	</h4>
 	<h2>The purpose of the program is to organize the files of the chosen folder based on three modes:</h2>
  	<h3>1. Standard mode: Organize the files of the chosen folder based on their extension formats.</h3>
  	<h4>Instruction:</h4>
@@ -106,15 +125,6 @@ Extension_name must be a valid name without a dot (.), and it can be multiple wo
 6. Choose the language that you want folders' names based on your customized choice.<br><br>
 Note: If there are files' extension formats that are not in your customized list, they will be automatically organized based on their extension formats.<br><br>
 	</h5>
-  	 <h2>
-The program is tested and tried as jar and exe in Windows only (As jar, maybe it works in Mac and Linux OS)<br><br>
-The program is programmed by Jawad Alyousef<br><br>
-The program is open-source, you can use it and modify it if you want to improve it<br><br>
-Don't forget to give me credit for the original work <br><br>
-Version: 1 <br><br>
-Contact me: Jawadkazemalyousef@gmail.com <br><br>
-Copyright (C) 2023 Jawad kazem Alyousef <br><br>
-	 </h2>
   <h2 align=center>Thank you</h2>
 </div>
 
