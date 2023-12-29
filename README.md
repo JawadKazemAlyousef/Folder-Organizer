@@ -18,12 +18,12 @@
 1. تحميل جافا نسخة 17.0.9 أو أعلى عن طريق https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html. <br><br>
 2. ضع متغير البيئة متعلق بجافا:<br><br>
 	الخطوات:<br><br>
-1. الذهاب لجهاز الكمبيوتر.<br><br>
-2. نقر على زر الفأرة الأيمن، ثم نقر خصائص.<br><br>
-3. نقر إعدادات النظام المتقدمة.<br><br>
-4. نقر متغيرات البيئة.<br><br>
-5. ثم نقر جديد، ضع متغير باسم %JAVA_HOME% أو JAVA_HOME ثم ضع قيمته مسار Java\jdk-17 الذي يكون في القرص المحلي C مع البرامج إذا كان هناك هالمتغير تأكد من جعل قيمته المسار المذكور سابقا.<br><br>
-6. اذهب للPATH سواء في النظام أو المستخدم وضع المسار Java\jdk-17\bin الموجود في القرص C مع البرامج.<br><br>
+1. اذهب لجهاز الكمبيوتر.<br><br>
+2. انقر على زر الفأرة الأيمن، ثم انقر خصائص.<br><br>
+3. انقر إعدادات النظام المتقدمة.<br><br>
+4. انقر متغيرات البيئة.<br><br>
+5. انقر جديد، ضع متغير باسم %JAVA_HOME% أو JAVA_HOME ثم ضع قيمته مسار Java\jdk-17 الذي يكون في القرص المحلي C مع البرامج إذا كان هناك هالمتغير تأكد من جعل قيمته المسار المذكور سابقا.<br><br>
+6. اذهب للPATH في قسم النظام وضع المسار Java\jdk-17\bin الموجود في القرص C مع البرامج.<br><br>
 	</h4>
 	<h2>الغرض من منظم الملفات تنظيم ملفات المجلد المختار حسب ثلاثة أوضاع:</h2>
  	<h3>1. الوضع العادي: نظم ملفات المجلد المختار حسب صيغهم.</h3>
@@ -92,7 +92,7 @@ Steps:<br><br>
 3. Click Advanced system settings.<br><br>
 4. Click Environment Variables.<br><br>
 5. Click new, and then set variable name %JAVA_HOME% or JAVA_HOME and set its value as the path Java\jdk-17 that you can find with your programs in your local C Disk if this variable is exist, make sure to make its value as the mentioned path.<br><br>
-6. Go to PATH either by system or user, and set Java\jdk-17\bin that you can find with your programs in your local C Disk.<br><br>
+6. Go to PATH in system section, and set Java\jdk-17\bin that you can find with your programs in your local C Disk.<br><br>
 	</h4>
 	<h2>The purpose of the program is to organize the files of the chosen folder based on three modes:</h2>
  	<h3>1. Standard mode: Organize the files of the chosen folder based on their extension formats.</h3>
