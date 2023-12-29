@@ -287,8 +287,8 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 	             
                   if(!getIsChangeTheme()){
  //               	 System.out.println(2);
-                 	 getMainPain().getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
-                 	 getMainPain().getStylesheets().remove(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());         	
+                 	 getMainPain().getStylesheets().add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
+                 	 getMainPain().getStylesheets().remove(new File("resources/Styles/Dark mode theme.css").toURI().toString());         	
                   }
   
 	             
@@ -339,7 +339,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 	                getMainPain().setCenter(hBoxCenter);
 	                getMainPain().setTop(vhBoxTop);
 	                 
-	                Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
+	                Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 	                
 	               
 	                getPrimaryStage().setResizable(false);
@@ -388,8 +388,8 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
    	             
                      if(!getIsChangeTheme()){
     //               	 System.out.println(2);
-                    	 getMainPain().getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
-                    	 getMainPain().getStylesheets().remove(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());         	
+                    	 getMainPain().getStylesheets().add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
+                    	 getMainPain().getStylesheets().remove(new File("resources/Styles/Dark mode theme.css").toURI().toString());         	
                      }
      
    	             
@@ -484,15 +484,15 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
     		darkLightLogo.setPreserveRatio(true);
         	if(getThemeMode()==0 && !sameInfo) {
 //        		System.out.println("Test1");
-        		darkLightLogo.setImage(new Image(getClass().getResource("/resources/Images/Dark mode.png").toExternalForm()));
+        		darkLightLogo.setImage(new Image(new File("resources/Images/Dark mode.png").toURI().toString()));
         		getLightDarkMode().setGraphic(darkLightLogo);
-        		scene.getStylesheets().remove(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
+        		scene.getStylesheets().remove(new File("resources/Styles/Dark mode theme.css").toURI().toString());
         	}	
         	else if(getThemeMode()==1 && !sameInfo){
 //        		System.out.println("Test2");
-        		darkLightLogo.setImage(new Image(getClass().getResource("/resources/Images/Light mode.png").toExternalForm()));
+        		darkLightLogo.setImage(new Image(new File("resources/Images/Light mode.png").toURI().toString()));
         		getLightDarkMode().setGraphic(darkLightLogo);
-        		scene.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
+        		scene.getStylesheets().add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
         	}
     	}
     	else {
@@ -502,14 +502,14 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
     		darkLightLogo.fitWidthProperty().bind(getLightDarkMode().widthProperty());
     		darkLightLogo.setPreserveRatio(true);
         	if(getThemeMode()==0) {
-        		darkLightLogo.setImage(new Image(getClass().getResource("/resources/Images/Dark mode.png").toExternalForm()));
+        		darkLightLogo.setImage(new Image(new File("resources/Images/Dark mode.png").toURI().toString()));
         		getLightDarkMode().setGraphic(darkLightLogo);
-        		scene.getStylesheets().remove(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
+        		scene.getStylesheets().remove(new File("resources/Styles/Dark mode theme.css").toURI().toString());
         	}	
         	else if(getThemeMode()==1){
-        		darkLightLogo.setImage(new Image(getClass().getResource("/resources/Images/Light mode.png").toExternalForm()));
+        		darkLightLogo.setImage(new Image(new File("resources/Images/Light mode.png").toURI().toString()));
         		getLightDarkMode().setGraphic(darkLightLogo);
-        		scene.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
+        		scene.getStylesheets().add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
         	}
     	}
 
@@ -531,7 +531,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 		languageLogo.setPreserveRatio(true);
 		
 		if(getLanguageMode() == 0) {
-			languageLogo.setImage(new Image(getClass().getResource("/resources/Images/Arabic logo.png").toExternalForm()));
+			languageLogo.setImage(new Image(new File("resources/Images/Arabic logo.png").toURI().toString()));
     		getLanguageButton().setGraphic(languageLogo);
     		
     		getPrimaryStage().setTitle("Folder Organizer");
@@ -552,7 +552,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
     		}	
     	else if(getLanguageMode() == 1){
     		
-    		languageLogo.setImage(new Image(getClass().getResource("/resources/Images/English logo.png").toExternalForm()));
+    		languageLogo.setImage(new Image(new File("resources/Images/English logo.png").toURI().toString()));
     		getLanguageButton().setGraphic(languageLogo);
     		
     		getPrimaryStage().setTitle("منظم الملفات");
@@ -621,13 +621,13 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 	    		if(getIsOpen()) {
 	    			setIsOpen(false);
 	    			
-	    			 File recommendedPath = new File("src/main/resources/Mode settings");
+	    			 File recommendedPath = new File("resources/Mode settings");
 	    			 System.out.println(recommendedPath.getAbsolutePath());
 	    	 	 	 FileChooser openController = new FileChooser();
 	    	 	 	 openController.setTitle("Open | فتح");
 	    	 	 	 openController.getExtensionFilters().addAll(new ExtensionFilter("fo", "*.fo*"));;
 	    	 	 	 openController.setInitialDirectory(recommendedPath);
-	    	 	 	 Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
+	    	 	 	 Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 	    	 		
 		             getPrimaryStage().setTitle("");
 		             getPrimaryStage().setResizable(false);
@@ -645,7 +645,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 	    	 	 	 File openDialog = openController.showOpenDialog(getPrimaryStage());
 		             getPrimaryStage().setAlwaysOnTop(false);
 	    	 	 	 if(openDialog == null) {
-	    		    	runPath = "src/main/resources/Mode settings/Saved settings.fo";
+	    		    	runPath = "resources/Mode settings/Saved settings.fo";
 	    		    	File runSetting = new File(runPath);
  	    	   			if(!runSetting.isFile()) {
  	    	   				setRunFileSettings(runSetting.getAbsolutePath());
@@ -713,7 +713,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 			 	    	   		window.setOnCloseRequest(e -> {
 			 	    	   			try {
 			 	    	   				confirmAlert.close();
-				 	    	   			String runPathC = "src/main/resources/Mode settings/Saved settings.fo";
+				 	    	   			String runPathC = "resources/Mode settings/Saved settings.fo";
 				 	    	   			File runSettingC = new File(runPathC);
 				 	    	   			if(!runSettingC.isFile()) {
 			 	    	   				setRunFileSettings(runSettingC.getAbsolutePath());
@@ -749,7 +749,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 			 	    	   			setRunFileSettings(runSetting.getAbsolutePath());
 			 	    	   			savedSetting();
 			 	    	   		} else {
-			 	    	   			runPath = "src/main/resources/Mode settings/Saved settings.fo";
+			 	    	   			runPath = "resources/Mode settings/Saved settings.fo";
 			 	    	   			runSetting = new File(runPath);
 			 	    	   			if(!runSetting.isFile()) {
 			 	    	   				setRunFileSettings(runSetting.getAbsolutePath());
@@ -805,7 +805,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
     	 try {
     		 String openPath = "";
     		 if(!bySaveAs) {
-    			 File recommendedPath = new File("src/main/resources/Mode settings");
+    			 File recommendedPath = new File("resources/Mode settings");
     	 	 	 FileChooser openController = new FileChooser();
     	 	 	 openController.setTitle("Open");
     	 	 	 openController.getExtensionFilters().addAll(new ExtensionFilter("fo", "*.fo*"));;
@@ -861,11 +861,11 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 	 			    buttonbar.getButtons().forEach(b -> b.setStyle("-fx-background-radius: 90px; -fx-font-size:20;")) ;
 	 	 		    if(getThemeMode() == 1) {
 	 	 		    	content.setStyle("-fx-fill: white;");
-	 	 		    	errorDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
+	 	 		    	errorDialog.getStylesheets().add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 	 	 		    	errorDialog.getStyleClass().add("Dark mode theme");
 	 	 	
 	 	 		    }
-	 	 		    Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
+	 	 		    Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 	 	 		    Stage stageIcon = (Stage) window;
 	 	 		    stageIcon.getIcons().add(programIcon);
 	 	 	 	   		
@@ -902,11 +902,11 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 	 			    
 	 	 		    if(getThemeMode() == 1) {
 	 	 		    	content.setStyle("-fx-fill: white;");
-	 	 		    	errorDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
+	 	 		    	errorDialog.getStylesheets().add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 	 	 		    	errorDialog.getStyleClass().add("Dark mode theme");
 	 	 	
 	 	 		    }
-	 	 		    Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
+	 	 		    Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 	 	 		    Stage stageIcon = (Stage) window;
 	 	 		    stageIcon.getIcons().add(programIcon);
 	 	 	 	   		
@@ -1035,7 +1035,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
     
    public void savedAsSetting(Scene scene, OrganizeFolderMainUI mainObj) {
 	    try {
-	    	File recommendedPath = new File("src/main/resources/Mode settings");
+	    	File recommendedPath = new File("resources/Mode settings");
 	    	FileChooser savedController = new FileChooser();
 	    	savedController.setTitle("Save As");
 	    	savedController.getExtensionFilters().addAll(new ExtensionFilter(".fo", "*.fo*"));;
@@ -1141,11 +1141,11 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 		    	partThree.setStyle("-fx-font-weight: normal; -fx-fill: white;");
 		    	partFour.setStyle("-fx-font-weight: normal; -fx-fill: white;");
 		    	
-		    	helpDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
+		    	helpDialog.getStylesheets().add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 		    	helpDialog.getStyleClass().add("Dark mode theme");
 	
 		    }
-		    Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
+		    Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 		    Stage stageIcon = (Stage) window;
 		    stageIcon.getIcons().add(programIcon);
 	 	   		
@@ -1207,11 +1207,11 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 		    	partThree.setStyle("-fx-font-weight: normal; -fx-fill: white; direction: ltr;");
 		    	partFour.setStyle("-fx-font-weight: normal; -fx-fill: white; direction: ltr;");
 		    	
-		    	helpDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
+		    	helpDialog.getStylesheets().add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 		    	helpDialog.getStyleClass().add("Dark mode theme");
 	
 		    }
-		    Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
+		    Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 		    Stage stageIcon = (Stage) window;
 		    stageIcon.getIcons().add(programIcon);
 	 	   		
@@ -1260,11 +1260,11 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 		    
 		    if(getThemeMode() == 1) {
 		    	content.setStyle("-fx-fill: white; -fx-font-weight: normal;");
-		    	aboutDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
+		    	aboutDialog.getStylesheets().add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 		    	aboutDialog.getStyleClass().add("Dark mode theme");
 	
 		    }
-		    Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
+		    Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 		    Stage stageIcon = (Stage) window;
 		    stageIcon.getIcons().add(programIcon);
 	 	   		
@@ -1307,11 +1307,11 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 		    
 		    if(getThemeMode() == 1) {
 		    	content.setStyle("-fx-fill: white; -fx-font-weight: normal;");
-		    	aboutDialog.getStylesheets().add(getClass().getResource("/resources/Styles/Dark mode theme.css").toExternalForm());
+		    	aboutDialog.getStylesheets().add(new File("resources/Styles/Dark mode theme.css").toURI().toString());
 		    	aboutDialog.getStyleClass().add("Dark mode theme");
 	
 		    }
-		    Image programIcon = new Image(getClass().getResource("/resources/Images/Program icon.png").toExternalForm());
+		    Image programIcon = new Image(new File("resources/Images/Program icon.png").toURI().toString());
 		    Stage stageIcon = (Stage) window;
 		    stageIcon.getIcons().add(programIcon);
 	 	   		

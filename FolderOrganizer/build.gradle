@@ -2,7 +2,8 @@ plugins {
   id 'java'
   id 'application'
   id 'eclipse'
-  id "org.openjfx.javafxplugin" version "0.1.0"
+  id "org.openjfx.javafxplugin" version "0.1.0"  
+  id("org.beryx.jlink") version "3.0.1"
 }
 
 
@@ -24,13 +25,6 @@ test {
 }
 
 
-processResources{
-	from("src/main")
-	exclude("java")
-	exclude("Images")
-	exclude("Styles")
-	exclude("Mode settings")
-}
 
 dependencies{
 	implementation group: 'org.openjfx', name: 'javafx-controls', version: '20.0.1'
@@ -42,14 +36,13 @@ dependencies{
 }
 
 
-
-
 javafx {
     version = "21.0.1"
     modules = [ 'javafx.controls', 'javafx.base', 'javafx.graphics', 'javafx.fxml']
 }
 
 mainClassName = "folder.organizer.FolderOrganizerDriver"
+
 
 eclipse {
     classpath {
@@ -61,6 +54,28 @@ eclipse {
             }
         }
     }
+}
+
+jlink {
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    launcher {
+        name = 'FolderOrganizer'
+    }
+}
+
+task customFatJar(type: Jar) {
+    duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+    manifest {
+        attributes(
+            'Main-Class': 'folder.organizer.FolderOrganizerDriver'
+        )
+    }
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    with jar
+    exclude { FileTreeElement el -> el.file.toPath().startsWith("$buildDir/resources/main")}
+    
 }
 
 
