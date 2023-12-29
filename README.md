@@ -55,6 +55,7 @@
 لا تنس أن تنسب الفضل لي في العمل الأصلي<br><br>
 الإصدار: 1 <br><br>
 للتواصل معي: Jawadkazemalyousef@gmail.com <br><br>
+حقوق النشر (C) 2023 جواد كاظم اليوسف
   	 </h2>
     <h2 align=center>شكرا لكم</h2>
 </div>
@@ -111,7 +112,8 @@ The program is programmed by Jawad Alyousef<br><br>
 The program is open-source, you can use it and modify it if you want to improve it<br><br>
 Don't forget to give me credit for the original work <br><br>
 Version: 1 <br><br>
-Contact me: Jawadkazemalyousef@gmail.com <br><br>	 
+Contact me: Jawadkazemalyousef@gmail.com <br><br>
+Copyright (C) 2023 Jawad kazem Alyousef <br><br>
 	 </h2>
   <h2 align=center>Thank you</h2>
 </div>
