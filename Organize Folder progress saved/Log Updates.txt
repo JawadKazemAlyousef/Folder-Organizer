@@ -72,7 +72,7 @@ Log update Ver 18:
 	
 Log update Ver 19 (final):
 	19th saved progress:
-	Last modify: Add Rename feature in custom dialog, and comvert my project to gradle Project, with correct utf-8 errors.
+	Last modify: Add Rename feature in custom dialog, convert my project to gradle Project, with correct utf-8 errors, and compelte gradle program with fatjar.
 	
 Upcoming after Ver 14:
 	1. Save setting in customised mode. (done)
