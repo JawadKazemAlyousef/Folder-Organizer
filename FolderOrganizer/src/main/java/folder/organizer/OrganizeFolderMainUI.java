@@ -1238,6 +1238,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 		    					"Don't forget to give me credit for the original work \n\n"+
 		    					"Version: "+getVersion()+
 		    					"\n\nContact me: Jawadkazemalyousef@gmail.com\n\n"+
+		    					"Copyright (C) 2023 Jawad kazem Alyousef\n\n"+
 					  			"Thank you");
 		    content.setStyle("-fx-font-size:20; -fx-font-weight: normal;");
 		    
@@ -1284,6 +1285,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
 		    					"لا تنس أن تنسب الفضل لي في العمل الأصلي\n\n"+
 		    					"الإصدار: "+getVersion()+
 		    					"\n\nللتواصل معي:  Jawadkazemalyousef@gmail.com\n\n"+
+		    					"حقوق النشر (C) 2023 جواد كاظم اليوسف\n\n"+
 					  			"شكرا لكم");
 		    content.setStyle("-fx-font-size:20; direction: ltr; -fx-font-weight: normal;");
 		    
