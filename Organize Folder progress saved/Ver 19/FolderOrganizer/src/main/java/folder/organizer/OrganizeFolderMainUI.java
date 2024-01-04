@@ -565,7 +565,7 @@ public class OrganizeFolderMainUI extends FolderOrganizerDriver{
             
             getOpen().setText("فتح");
             getSave().setText("حفظ");
-            getSaveAs().setText("حقظ كـ");
+            getSaveAs().setText("حفظ كـ");
             getHelp().setText("مساعدة");
             getAbout().setText("حول");
             
