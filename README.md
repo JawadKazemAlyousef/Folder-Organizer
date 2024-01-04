@@ -97,7 +97,6 @@ Steps:<br><br>
 6. Go to PATH in system section, and set Java\jdk-17\bin that you can find with your programs in your local C Disk.<br><br>
 Explanation (only Arabic): https://drive.google.com/file/d/1-k596tBaXMWZvW271cuI2RU6WqDFrLpx/view<br><br>
 3. Make sure to run the program as administrator if saved setting file is installed in C dick (at the general path for installing programs) due to the changes will not update when you press Save option because of protection, or install the program at another path that is not inside C dick. <br><br>
-
 	</h4>
 	<h2>The purpose of the program is to organize the files of the chosen folder based on three modes:</h2>
  	<h3>1. Standard mode: Organize the files of the chosen folder based on their extension formats.</h3>
