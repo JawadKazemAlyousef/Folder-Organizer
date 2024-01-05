@@ -24,7 +24,7 @@
 4. انقر متغيرات البيئة.<br><br>
 5. انقر جديد، ضع متغير باسم %JAVA_HOME% أو JAVA_HOME ثم ضع قيمته مسار Java\jdk-17 الذي يكون في القرص المحلي C مع البرامج إذا كان هناك هالمتغير تأكد من جعل قيمته المسار المذكور سابقا.<br><br>
 6. اذهب للPATH في قسم النظام وضع المسار Java\jdk-17\bin الموجود في القرص C مع البرامج.<br><br>
-الشرح (عربي فقط): <br><br>
+الشرح (عربي فقط): https://drive.google.com/file/d/1V-yF3O-KucTUc5nb1HIP0-s6ZRP5atn4/view?usp=sharing <br><br>
 3. تأكد من فتح البرنامج كأدمن إذا كانت التخزينة في المكان العام لتثبيت البرامج داخل القرص المحلي C لأن التغيرات لا تتحدث مع الحفظ بسبب الحماية، أو ثبت البرنامج في مكان آخر غير محمي من المستخدم الخاص بك، أو اتستخدم تخزينة بمكان غير محمي من المستخدم الخاص بك.
 	</h4>
 	<h2>الغرض من منظم الملفات تنظيم ملفات المجلد المختار حسب ثلاثة أوضاع:</h2>
@@ -95,7 +95,7 @@ Steps:<br><br>
 4. Click Environment Variables.<br><br>
 5. Click new, and then set variable name %JAVA_HOME% or JAVA_HOME and set its value as the path Java\jdk-17 that you can find with your programs in your local C Disk if this variable is exist, make sure to make its value as the mentioned path.<br><br>
 6. Go to PATH in system section, and set Java\jdk-17\bin that you can find with your programs in your local C Disk.<br><br>
-Explanation (only Arabic): <br><br>
+Explanation (only Arabic): https://drive.google.com/file/d/1V-yF3O-KucTUc5nb1HIP0-s6ZRP5atn4/view?usp=sharing <br><br>
 3. Make sure to run the program as administrator if saved setting file is installed at the general path for installing programs in C disk due to the changes will not update when you press Save option because of protection, install the program at another path that is not protected from your user, or use another saved setting file whose path is not protected from your user. <br><br>
 	</h4>
 	<h2>The purpose of the program is to organize the files of the chosen folder based on three modes:</h2>
